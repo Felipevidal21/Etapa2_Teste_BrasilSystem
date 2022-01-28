@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiSoLi</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Sistema para Solicitação de Livros - SiSoLi</h1>
+        </div>
+    </div>
+    <div class="container">
+
+        <div id="crono">
+            <p>
+                <span id="t_minutos">60</span>
+                <span id="t_segundo">00</span>
+
+            </p>
+        </div>
+      
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <label id="obrig">obrigatorio*</label>
+                    <label for="Vinculo">Selecione Vinculo</label> <br>
+                    <select class="form-select" id="vinculo">
+                        <option value="">Selecione o Vinculo</option>
+                        <option value="Docente">Docente</option>
+                        <option value="Discente">Discente</option>
+                        <option value="Tecnico">Técnico</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label id="obrig">obrigatorio*</label>
+
+                    <label>Autor</label>
+                    <input type="text" class="form-control" placeholder="Digite o Autor do livro" id="autor">
+                </div>
+
+                <div class="form-group">
+                    <label id="obrig">obrigatorio*</label>
+
+                    <label>ISSN</label>
+                    <input type="number" class="form-control" placeholder="Digite o ISSN do livro" id="issn">
+                </div>
+
+                <div class="form-group">
+                    <label id="obrig">obrigatorio*</label>
+
+                    <label>Editora</label>
+                    <input type="text" class="form-control" placeholder="Digite a Aditora(o) do livro" id="editora">
+                </div>
+
+                <div class="form-group">
+                    <label id="obrig">obrigatorio*</label>
+
+                    <label>Titulo</label>
+                    <input type="text" class="form-control" placeholder="Digite o Titulo do livro" id="titulo">
+                </div>
+
+                <div class="form-group">
+                    <label id="obrig">obrigatorio*</label>
+
+                    <label>Edição</label>
+                    <input type="number" class="form-control" placeholder="Digite a Edição do livro" id="edicao">
+                </div>
+
+                <div class="form-group">
+                    <label id="obrig">obrigatorio*</label>
+
+                    <label>Ano</label>
+                    <input type="number" class="form-control" placeholder="Digite o ano de publicação" id="ano">
+                </div>
+
+                <div class="form-group text-center">
+                    <button class="btn btn-primary" onclick="salvar()">Solicitar livro</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="vis">
+
+        <h1 class="h1">Tabela de Solicitação</h1>
+            <table class="table table-hover" id="tableId">
+                <thead>
+                    <th scope="col">ID</th>
+                    <th scope="col">Vinculo</th>
+                    <th scope="col">Autor</th>
+                    <th scope="col">ISSN</th>
+                    <th scope="col">Editora</th>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Edição</th>
+                    <th scope="col">Ano</th>
+                </thead>
+                <tbody id="tbody">
+                     
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="js/javascript.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>
