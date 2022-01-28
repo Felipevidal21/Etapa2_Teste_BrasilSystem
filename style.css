@@ -1,0 +1,51 @@
+body{
+    background: rgb(107, 107, 223);
+}
+.row {
+    width: 100%;
+    background: white;
+    color: rgb(39, 4, 104);
+    margin-left: 0;
+}
+
+.card {
+    top: 50px;
+    box-shadow: 3px 6px 8px 3px rgba(100, 100, 100, 0.3);
+
+}
+
+#obrig {
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    float: right;
+    font-size: 8pt;
+    margin-top: 5px;
+}
+
+#vis {
+    display: none;
+    width: 100%;
+    margin-top: 70px;
+
+}
+
+thead{
+    color: white;
+}
+
+button{
+    margin-top: 50px;
+}
+
+#crono {
+    position: relative;
+    width: 70px;
+    height: 35px;
+    text-align: center;
+    float: right;
+    margin-top: 10px;
+    padding: 5px;
+    background: rgb(247, 245, 245);
+    color: rgb(9, 6, 17);
+    border-radius: 5px;
+}
